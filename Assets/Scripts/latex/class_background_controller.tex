@@ -1,0 +1,102 @@
+\hypertarget{class_background_controller}{}\section{Background\+Controller Class Reference}
+\label{class_background_controller}\index{Background\+Controller@{Background\+Controller}}
+Inheritance diagram for Background\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_background_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_background_controller_ac4b0d540fa72d7c57e919c309bb8f167}{move} ()
+\begin{DoxyCompactList}\small\item\em This method is generate the move of the background. \end{DoxyCompactList}\item 
+override void \hyperlink{class_background_controller_a39841506fc252b3515273a58df8b852f}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the position of background controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_background_controller_ae19cb26cc69a10ecb9ee01f316611dc7}{}\label{class_background_controller_ae19cb26cc69a10ecb9ee01f316611dc7} 
+float {\bfseries move\+Speed}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_background_controller_ae65426d342e98cb14dab526c8bd5eadf}{Start} ()
+\begin{DoxyCompactList}\small\item\em Set the variable for beginning of the game start, rigid\+Body variable that enables physical behaviour for a Game\+Object, player is variable get player object that find the player script , start\+Pos is variable to set position of background. \end{DoxyCompactList}\item 
+void \hyperlink{class_background_controller_adb5ce992d04cb58e1978ee2cc5897934}{Fixed\+Update} ()
+\begin{DoxyCompactList}\small\item\em This method is always run once per frame for game, 
+
+For set the velocity of the background to 10 which mean the speed of the background is 10.
+
+This means the velocity affect only with the x so only move constant to right, but when dead the velocity change to zero \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_background_controller_ab00c8ac42acc6ad8ae78145b38c81a62}{}\label{class_background_controller_ab00c8ac42acc6ad8ae78145b38c81a62} 
+Rigidbody2D {\bfseries rigid\+Body}
+\item 
+\hypertarget{class_background_controller_a7848b63c50c6dc0eee0787693958c0ca}{}\label{class_background_controller_a7848b63c50c6dc0eee0787693958c0ca} 
+\hyperlink{class_player_controller}{Player\+Controller} {\bfseries player}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_background_controller_adb5ce992d04cb58e1978ee2cc5897934}{}\label{class_background_controller_adb5ce992d04cb58e1978ee2cc5897934} 
+\index{Background\+Controller@{Background\+Controller}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Background\+Controller@{Background\+Controller}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Background\+Controller.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This method is always run once per frame for game, 
+
+For set the velocity of the background to 10 which mean the speed of the background is 10.
+
+This means the velocity affect only with the x so only move constant to right, but when dead the velocity change to zero 
+
+\hypertarget{class_background_controller_ac4b0d540fa72d7c57e919c309bb8f167}{}\label{class_background_controller_ac4b0d540fa72d7c57e919c309bb8f167} 
+\index{Background\+Controller@{Background\+Controller}!move@{move}}
+\index{move@{move}!Background\+Controller@{Background\+Controller}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily override void Background\+Controller.\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method is generate the move of the background. 
+
+
+
+Implements \hyperlink{class_game_object_controller_a0d186d143e280869efaff7835730fc82}{Game\+Object\+Controller}.
+
+\hypertarget{class_background_controller_a39841506fc252b3515273a58df8b852f}{}\label{class_background_controller_a39841506fc252b3515273a58df8b852f} 
+\index{Background\+Controller@{Background\+Controller}!reset@{reset}}
+\index{reset@{reset}!Background\+Controller@{Background\+Controller}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily override void Background\+Controller.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reset the position of background controller. 
+
+
+
+Implements \hyperlink{class_game_object_controller_a5e57dfd66120a1400e5947f5664a41e4}{Game\+Object\+Controller}.
+
+\hypertarget{class_background_controller_ae65426d342e98cb14dab526c8bd5eadf}{}\label{class_background_controller_ae65426d342e98cb14dab526c8bd5eadf} 
+\index{Background\+Controller@{Background\+Controller}!Start@{Start}}
+\index{Start@{Start}!Background\+Controller@{Background\+Controller}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Background\+Controller.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set the variable for beginning of the game start, rigid\+Body variable that enables physical behaviour for a Game\+Object, player is variable get player object that find the player script , start\+Pos is variable to set position of background. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Background\+Controller.\+cs\end{DoxyCompactItemize}

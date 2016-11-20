@@ -1,0 +1,104 @@
+\hypertarget{class_ground_obstacle_controller}{}\section{Ground\+Obstacle\+Controller Class Reference}
+\label{class_ground_obstacle_controller}\index{Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}}
+Inheritance diagram for Ground\+Obstacle\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_ground_obstacle_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_ground_obstacle_controller_ab218c8d1be89a93ab3c0a18ba3fc9d67}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the position of ground obstacles. \end{DoxyCompactList}\item 
+override void \hyperlink{class_ground_obstacle_controller_aad450d16fef8b23f848f87a81d1790a8}{move} ()
+\begin{DoxyCompactList}\small\item\em Generate the random position ground obstacles when touch the destroy collider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ground_obstacle_controller_a04079c11e4ef4255f0941537295c6529}{}\label{class_ground_obstacle_controller_a04079c11e4ef4255f0941537295c6529} 
+Sprite {\bfseries semak}
+\item 
+\hypertarget{class_ground_obstacle_controller_afca6892eb1f8ac1f08bc29bcc2955f3d}{}\label{class_ground_obstacle_controller_afca6892eb1f8ac1f08bc29bcc2955f3d} 
+Sprite {\bfseries batu}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ground_obstacle_controller_ac03d4b2a3dc70e560a8ffa100035400e}{Start} ()
+\begin{DoxyCompactList}\small\item\em Generate the position of ground obstacles, to the random position in range -\/10 until 10 of x position, and so the y position of ground obstacles is not random because ground obstacles are not flying. And in this method we have random ground obstacles. 
+
+The random will choose the stone or bushes, so didn\textquotesingle{}t respawn both.\end{DoxyCompactList}\item 
+void \hyperlink{class_ground_obstacle_controller_a755e906f0dd101886ad14b20dabbe89e}{change\+To\+Semak} ()
+\begin{DoxyCompactList}\small\item\em Get the script of bushes then generate the x position and same with script of box collider. \end{DoxyCompactList}\item 
+void \hyperlink{class_ground_obstacle_controller_a975b0dba0ed0ee928ad1b7cd40db98da}{change\+To\+Batu} ()
+\begin{DoxyCompactList}\small\item\em Get the script of stone then generate the x position and same with script of box collider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ground_obstacle_controller_a975b0dba0ed0ee928ad1b7cd40db98da}{}\label{class_ground_obstacle_controller_a975b0dba0ed0ee928ad1b7cd40db98da} 
+\index{Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}!change\+To\+Batu@{change\+To\+Batu}}
+\index{change\+To\+Batu@{change\+To\+Batu}!Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}}
+\subsubsection{\texorpdfstring{change\+To\+Batu()}{changeToBatu()}}
+{\footnotesize\ttfamily void Ground\+Obstacle\+Controller.\+change\+To\+Batu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get the script of stone then generate the x position and same with script of box collider. 
+
+\hypertarget{class_ground_obstacle_controller_a755e906f0dd101886ad14b20dabbe89e}{}\label{class_ground_obstacle_controller_a755e906f0dd101886ad14b20dabbe89e} 
+\index{Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}!change\+To\+Semak@{change\+To\+Semak}}
+\index{change\+To\+Semak@{change\+To\+Semak}!Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}}
+\subsubsection{\texorpdfstring{change\+To\+Semak()}{changeToSemak()}}
+{\footnotesize\ttfamily void Ground\+Obstacle\+Controller.\+change\+To\+Semak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get the script of bushes then generate the x position and same with script of box collider. 
+
+\hypertarget{class_ground_obstacle_controller_aad450d16fef8b23f848f87a81d1790a8}{}\label{class_ground_obstacle_controller_aad450d16fef8b23f848f87a81d1790a8} 
+\index{Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}!move@{move}}
+\index{move@{move}!Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily override void Ground\+Obstacle\+Controller.\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Generate the random position ground obstacles when touch the destroy collider. 
+
+
+
+Implements \hyperlink{class_game_object_controller_a0d186d143e280869efaff7835730fc82}{Game\+Object\+Controller}.
+
+\hypertarget{class_ground_obstacle_controller_ab218c8d1be89a93ab3c0a18ba3fc9d67}{}\label{class_ground_obstacle_controller_ab218c8d1be89a93ab3c0a18ba3fc9d67} 
+\index{Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}!reset@{reset}}
+\index{reset@{reset}!Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily override void Ground\+Obstacle\+Controller.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reset the position of ground obstacles. 
+
+
+
+Implements \hyperlink{class_game_object_controller_a5e57dfd66120a1400e5947f5664a41e4}{Game\+Object\+Controller}.
+
+\hypertarget{class_ground_obstacle_controller_ac03d4b2a3dc70e560a8ffa100035400e}{}\label{class_ground_obstacle_controller_ac03d4b2a3dc70e560a8ffa100035400e} 
+\index{Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}!Start@{Start}}
+\index{Start@{Start}!Ground\+Obstacle\+Controller@{Ground\+Obstacle\+Controller}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Ground\+Obstacle\+Controller.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generate the position of ground obstacles, to the random position in range -\/10 until 10 of x position, and so the y position of ground obstacles is not random because ground obstacles are not flying. And in this method we have random ground obstacles. 
+
+The random will choose the stone or bushes, so didn\textquotesingle{}t respawn both.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Ground\+Obstacle\+Controller.\+cs\end{DoxyCompactItemize}

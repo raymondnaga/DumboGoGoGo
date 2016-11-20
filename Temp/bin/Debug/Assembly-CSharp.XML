@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assembly-CSharp</name>
+    </assembly>
+    <members>
+        <member name="M:AudioController.Start">
+            <summary>
+            Get the audio file to play.
+            </summary>
+        </member>
+        <member name="M:AudioController.reset">
+            <summary>
+            Reset the audio to the beginning.
+            </summary>
+        </member>
+        <member name="M:AudioController.move">
+            <summary>
+            Not supported method for audio controller class.
+            </summary>
+        </member>
+        <member name="M:AudioController.stop">
+            <summary>
+            Stop the sound of audio file.
+            </summary>
+        </member>
+        <member name="M:BackgroundController.Start">
+            <summary>
+            Set the variable for beginning of the game start,
+            rigidBody variable that enables physical behaviour for a GameObject,
+            player is variable get player object that find the player script ,
+            startPos is variable to set position of background.
+            </summary>
+        </member>
+        <member name="M:BackgroundController.FixedUpdate">
+            <summary>
+            This method is always run once per frame for game,
+            <example>For set the velocity of the background to 10 which mean the speed of the background is 10.</example>
+            This means the velocity affect only with the x so only move constant to right, but when dead the velocity change to zero
+            </summary>
+        </member>
+        <member name="M:BackgroundController.move">
+            <summary>
+            This method is generate the move of the background.
+            </summary>
+        </member>
+        <member name="M:BackgroundController.reset">
+            <summary>
+            Reset the position of background controller.
+            </summary>
+        </member>
+        <member name="M:BorderController.move">
+            <summary>
+            This method is move the border to constantly to the right.
+            </summary>
+        </member>
+        <member name="M:BorderController.reset">
+            <summary>
+            Reset the position of border controller.
+            </summary>
+        </member>
+        <member name="M:BorderController.Start">
+            <summary>
+            Generate the position of border.
+            </summary>
+        </member>
+        <member name="M:CameraController.Start">
+            <summary>
+            Generate the first of the game view,
+            the view is depend on the player object and the following of it's position.
+            </summary>
+        </member>
+        <member name="M:CameraController.Update">
+            <summary>
+            Change the view to last player position.
+            </summary>
+        </member>
+        <member name="M:DeathMenu.Start">
+            <summary>
+            Find the sricpt of audio controller.
+            </summary>
+        </member>
+        <member name="M:DeathMenu.RestartGame">
+            <summary>
+            Restart the game to the beginning.
+            </summary>
+        </member>
+        <member name="M:FlyingObstacleController.Start">
+            <summary>
+            Generate the position of flying obstacle,
+            to the random position in range -5 until 10 of x position,
+            and so the y position of flying obstacle.
+            </summary>
+        </member>
+        <member name="M:FlyingObstacleController.reset">
+            <summary>
+            Reset the position of flying obstacle.
+            </summary>
+        </member>
+        <member name="M:FlyingObstacleController.move">
+            <summary>
+            Generate the random position flying obstacle when touch the destroy collider.
+            </summary>
+        </member>
+        <member name="M:FlyingObstacleController.random">
+            <summary>
+            Random method called when position of y so didn't take to close of ground obstacles.
+            </summary>
+            <returns>The value of random the y position.</returns>
+        </member>
+        <member name="M:GameManager.Start">
+            <summary>
+            Find the script of game object controller.
+            </summary>
+        </member>
+        <member name="M:GameManager.RestartGame">
+            <summary>
+            This method is calling death screen from class DeathMenu,
+            so we can't move again.
+            </summary>
+        </member>
+        <member name="M:GameManager.Reset">
+            <summary>
+            This method is calling death screen from class DeathMenu,
+            so when the player died the variable set to false then the position is restart,
+            the restart is affect to background and all other object to beginning again.
+            </summary>
+        </member>
+        <member name="M:GameObjectController.reset">
+            <summary>
+            Reset method.
+            </summary>
+        </member>
+        <member name="M:GameObjectController.move">
+            <summary>
+            Move method.
+            </summary>
+        </member>
+        <member name="M:GroundObstacleController.Start">
+            <summary>
+            Generate the position of ground obstacles,
+            to the random position in range -10 until 10 of x position,
+            and so the y position of ground obstacles is not random because ground obstacles are not flying.
+            And in this method we have random ground obstacles.
+            <example>The random will choose the stone or bushes, so didn't respawn both.</example>
+            </summary>
+        </member>
+        <member name="M:GroundObstacleController.reset">
+            <summary>
+            Reset the position of ground obstacles.
+            </summary>
+        </member>
+        <member name="M:GroundObstacleController.move">
+            <summary>
+            Generate the random position ground obstacles when touch the destroy collider.
+            </summary>
+        </member>
+        <member name="M:GroundObstacleController.changeToSemak">
+            <summary>
+            Get the script of bushes then generate the x position and same with script of box collider.
+            </summary>
+        </member>
+        <member name="M:GroundObstacleController.changeToBatu">
+            <summary>
+            Get the script of stone then generate the x position and same with script of box collider.
+            </summary>
+        </member>
+        <member name="M:InGameMenu.QuitToMain">
+            <summary>
+            Select the main menu of game.
+            </summary>
+        </member>
+        <member name="M:InGameMenu.RestartGame">
+            <summary>
+            Set game to restart to the beginning of the game.
+            </summary>
+        </member>
+        <member name="M:InitialMenu.Start">
+            <summary>
+            Set the menu to set scene for hint game.
+            </summary>
+        </member>
+        <member name="M:InitialMenu.Update">
+            <summary>
+            Set the game on, so that menu goes off.
+            </summary>
+        </member>
+        <member name="M:MainMenu.PlayGame">
+             <summary>
+             Start the game.
+            </summary>
+        </member>
+        <member name="M:MainMenu.QuitGame">
+            <summary>
+            Quit the game.
+            </summary>
+        </member>
+        <member name="M:ObstacleController.setX(System.Single)">
+            <summary>
+            Set the position object with posistion of x.
+            </summary>
+            <param name="x">Parameter input data for change the x with float data type.</param>
+        </member>
+        <member name="M:PauseMenu.PauseGame">
+            <summary>
+            Pause the game show the scene of pause so set the character unable to move.
+            </summary>
+        </member>
+        <member name="M:PauseMenu.ResumeGame">
+            <summary>
+            Resume the game so set the character to can move again then remove the pause scene.
+            </summary>
+        </member>
+        <member name="M:PauseMenu.RestartGame">
+            <summary>
+            Restart the game to the beginning again then remove the pause scene.
+            </summary>
+        </member>
+        <member name="M:PauseMenu.QuitToMain">
+            <summary>
+            Exit to the main menu, then show the menu of the game.
+            </summary>
+        </member>
+        <member name="M:PlayerController.Start">
+            <summary>
+            rigidBody is variable to get script of the Rigidbody2D
+            collider is variable to get script of the Collider2D
+            animator is variable to get script of the Animator
+            isDead is variable set when die
+            startPos is variable to get position of beginning
+            </summary>
+        </member>
+        <member name="M:PlayerController.FixedUpdate">
+             <summary>
+             This method set when die then restart the game,
+             and set when press space our character fly
+             have the speed of character(movement), set the score,
+             then character set to always run to the front.
+            </summary>
+        </member>
+        <member name="M:PlayerController.jump">
+            <summary>
+            Set the character to jump.
+            </summary>
+        </member>
+        <member name="M:PlayerController.run">
+            <summary>
+            Move the character.
+            </summary>
+        </member>
+        <member name="M:PlayerController.fly">
+            <summary>
+            Set the character to fly.
+            </summary>
+        </member>
+        <member name="M:PlayerController.OnCollisionEnter2D(UnityEngine.Collision2D)">
+            <summary>
+            Set the animation of character to die when touch the obstacles, 
+            and we have the GodMode so didn't take this method.
+            </summary>
+            <param name="other">The variable input for other collider.</param>
+            <returns>Delay the animation of die.</returns>
+        </member>
+        <member name="M:PlayerController.move">
+            <summary>
+            Encapsulate the method of run so we can call this method enough for set the character to move.
+            </summary>
+        </member>
+        <member name="M:PlayerController.reset">
+            <summary>
+            Reset the position of all object and effect.
+            </summary>
+        </member>
+        <member name="M:PlayerController.god">
+            <summary>
+            Active the GodMode for invurnable to die when touch the obstacles.
+            </summary>
+        </member>
+        <member name="M:ScoreManager.Start">
+            <summary>
+            Set the score to zero and the high score with the highest score at before play.
+            </summary>
+        </member>
+        <member name="M:ScoreManager.Update">
+            <summary>
+            Always set the score always going advanced and matching with the move of character.
+            </summary>
+        </member>
+        <member name="M:ScoreManager.OnDestroy">
+            <summary>
+            Set the score to the high score.
+            </summary>
+        </member>
+    </members>
+</doc>

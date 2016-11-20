@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['setx',['setX',['../class_obstacle_controller.html#a74a4fcc11a02b51cf45c15a90e089e1a',1,'ObstacleController']]],
+  ['start',['Start',['../class_audio_controller.html#a9f54b63fdcc425116ff24c93775a1338',1,'AudioController.Start()'],['../class_background_controller.html#ae65426d342e98cb14dab526c8bd5eadf',1,'BackgroundController.Start()'],['../class_border_controller.html#ac0604cefdc2b662a396263e5271dffcf',1,'BorderController.Start()'],['../class_camera_controller.html#ad4a238c6f7db3ee003302a245d860860',1,'CameraController.Start()'],['../class_death_menu.html#a635010b99915f887ed7809f5c2e2a655',1,'DeathMenu.Start()'],['../class_flying_obstacle_controller.html#a8da1b0b0f2acdd0b411d892740c39831',1,'FlyingObstacleController.Start()'],['../class_game_manager.html#a5ccfacd027ad08eeb4ff1f25a7f59c98',1,'GameManager.Start()'],['../class_ground_obstacle_controller.html#ac03d4b2a3dc70e560a8ffa100035400e',1,'GroundObstacleController.Start()'],['../class_initial_menu.html#a4e3afff55963264f0c31ef3b5a780ce0',1,'InitialMenu.Start()'],['../class_player_controller.html#ae1117d9c4da3193181cddad2c814e467',1,'PlayerController.Start()'],['../class_score_manager.html#a2d8e7dd8928c4fa7feb1a020971b69ac',1,'ScoreManager.Start()']]],
+  ['stop',['stop',['../class_audio_controller.html#aeac4b18138013f602f8f1d67cb5daa2e',1,'AudioController']]]
+];
